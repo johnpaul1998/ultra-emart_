@@ -57,7 +57,7 @@ body{
 }
 /* <!-- ----  hero ---- --> */
 #hero{
-    background: url(/application/ultra-emart/images/banner-img-1.jpg)top/cover;
+    background: url(images/banner-img-1.jpg)top/cover;
 }
 .carousel-inner h1{
     font-size: 60px;
@@ -91,7 +91,7 @@ body{
     transition: all 0.3 ease;
 }
 #banner{
-    background: url(../ultra-emart/images/offer_img.jpg) center/cover;
+    background: url(images/offer_img.jpg) center/cover;
 }
 #banner .row{
     min-height: 60vh;
