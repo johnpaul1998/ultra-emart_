@@ -16,7 +16,7 @@
     referrerpolicy="no-referrer"
   />
   <!-- ----Custom CSS---- -->
-  <link rel="stylesheet" href="auth.css">
+  <link id="mainStyle" rel="stylesheet" href="auth.css">
     <title>Ultra shopping cart</title>
 </head>
 <body>
@@ -59,8 +59,25 @@
         </div>
     </div>
     <!-- ----Theme Change---- -->
-    <button id="theme_button" class="btn btn-theme">
+    <button id="theme_button" class="btn btn-theme" onclick="onThemeChange()">
         <i id="theme_icon" class="fa fa-moon"></i>
     </button>
+    <script>
+        function onThemeChange(){
+            // variable
+            let cssStyle = document.getElementById("mainStyle");
+            let cssLength = cssStyleSheet.href.Length;
+            let path = cssStyleSheet.href.subString(cssLength - 9,cssLength);
+
+            if(path === "/auth.css"){
+                cssStyleSheet.href ="/auth_dark.css";
+                document.getElementById("theme_icon").className = "fa fa-sun";
+            }
+            else{
+                cssStyleSheet.href = "/auth.css";
+                document.getElementById("theme_icon").className = "fa fa-moon";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -8,6 +8,7 @@
     box-shadow: 0 3px 12px rgb(0 0 0 /0.2);
     border-radius: 20px;
     padding: 10px 10%;
+    color: white;
 }
 .service-btn{
     background-color: white;
@@ -33,5 +34,5 @@
 }
 .auth-input:focus{
     background:rgb(0 0 0 /0.3);
-    color: #66fcfc;
+    color: #66fcf1;
 }
